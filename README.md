@@ -17,3 +17,4 @@ Kotlin\
 Навигация: Jetpack Navigation component (для разных вкладок разный бэк-стек)\
 Работа с асинхронностью: Coroutines\
 Работа с изображениями: Picasso
+DI: Dagger2
