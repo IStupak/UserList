@@ -31,9 +31,14 @@ class UserDetailsFragment : Fragment(R.layout.fragment_user_details) {
         setupViewModel()
     }
 
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
+
     private fun setupViewModel() {
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            vm.usermodel.collect {
+            vm.userModel.collect {
                 setUserData(it)
             }
         }
